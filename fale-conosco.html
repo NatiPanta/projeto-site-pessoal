@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Perfect One</title>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+</head>
+
+<body>
+    <div id="interface">
+		<header id="cabecalho">
+			<hgroup>
+				<h1>Perfect One</h1>
+				<h2>Dê outro ritmo para os seus negócios.</h2>
+			</hgroup>
+
+			<nav id="menu">
+				<h1>Menu Principal</h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos e serviços</a></li>
+					<li><a href="quemSomos.html">Quem somos</a></li>
+					<li><a href="fale-conosco.html">Fale conosco</a></li>
+				</ul>
+			</nav>
+		</header>
+                <form method="POST" id="fContato" action="mailto:natalia_pantaleoni@hotmail.com">
+                    <fieldset id="usuario">
+                        <legend>Identificação do Usuário</legend>
+                        <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+                        <p><label for="cMail">E-mail:</label><input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="Seu e-mail"/></p>
+                        <p><label for="cEmp">Empresa:<input type="text" name="tEmp" id="cEmp" placeholder="Nome da sua empresa"></label></p>
+                    </fieldset>
+
+                    <fieldset id="endereco">
+                        <legend>Endereço do Usuário</legend>
+                        <p><label for="cRua">Logradouro:<input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Travessa..."></label></p>
+                        <p><label for="cNum">Número:<input type="number" name="tNum" id="cNum" min="0" max="9999"></label></p>
+                        <p><label for="cEst">Estado:</label>
+                        <select name="tEst" id="cEst">
+                            <optgroup label="Região Sudeste">
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="SP" selected>São Paulo</option>
+                                <option value="MG">Minas Gerais</option>
+                            </optgroup>
+                            <optgroup label="Região Sul">
+                                <option value="PR">Paraná</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                            </optgroup>
+                        </select></p>
+                        <p><label for="cCid">Cidade:<input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"></label></p>
+                        <datalist id="cidades">
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Nova Iguaçu"></option>
+                            <option value="Niterói"></option>
+                            <option value="Belford Roxo"></option>
+                        </datalist>
+                    </fieldset>
+
+                    <fieldset id="mensagem">
+                        <legend>Mensagem do Usuário</legend>
+                        <p><label for="cMsg">Mensagem:</label>
+                        <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem."></textarea></p>
+                    </fieldset>
+
+                    <input type="image" name="botao" src="_imagens/botao-enviar.png">
+                    
+                </form>
+
+        <footer id="rodape">
+            <p>Copyright &copy; 2021 - by Natália Pantaleoni <br/>
+                <i><a href="https://www.facebook.com/natalia.pantaleoni/" target="blank">Facebook</a> |
+                    <a href="https://www.instagram.com/natipanta/" target="blank">Instagram</a></i>
+            </p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

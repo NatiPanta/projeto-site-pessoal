@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Perfect One - Cubicasa</title>
+    <link rel="stylesheet" href="_css/cubicasa.css" />
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+
+<body>
+    <img id="logo" src="_imagens/cubicasa-logo.png">
+
+    <img id="planta" src="_imagens/cubicasa.jpg">
+
+    <h1>Digitalize uma planta baixa em 5 minutos usando o aplicativo fácil de usar do CubiCasa.</h1>
+
+    <img id="telefone" src="_imagens/celular.png">
+
+    <aside id="lateral">
+        <h1>Benefícios do app CubiCasa:</h1>
+        <ul id="lista">
+            <li>De acordo com Zillow, a planta baixa é o segundo recurso mais importante em uma lista e está altamente
+                correlacionada com a captura de leads em potencial;</li>
+            <li>A digitalização com o aplicativo de planta baixa CubiCasa leva menos de 5 minutos em média e a planta
+                baixa resultante está sempre atualizada;</li>
+            <li>Sem rascunhos ou finalizações - entregamos uma planta baixa e profissional no próximo dia útil;</li>
+            <li>Acessível para qualquer anúncio, não apenas para propriedades de alto padrão;</li>
+            <li>Grande diversidade de dispositivos com suporte.</li>
+        </ul>
+    </aside>
+
+    <h1>Planos:</h1>
+    <table id="tabelaespec">
+        <tr>
+            <td class="ce">Plano Bronze</td>
+            <td class="cd">5 Scans – Valor R$ 400,00</td>
+        </tr>
+        <tr>
+            <td class="ce">Plano Prata</td>
+            <td class="cd">10 Scans – Valor R$ 750,00</td>
+        </tr>
+        <tr>
+            <td class="ce">Plano Ouro</td>
+            <td class="cd">20 Scans – Valor R$ 1.400,00</td>
+        </tr>
+    </table>
+
+    <form method="POST" id="fContato" action="mailto:natalia_pantaleoni@hotmail.com">
+        <fieldset id="usuario">
+            <legend>Contrate um pacote da CubiCasa agora mesmo:</legend>
+            <p><label for="cNome">Nome:</label></br></label><input type="text" name="tNome" id="cNome" size="70"
+                    placeholder="Nome Completo" /></p>
+            <p><label for="cMail">E-mail:</label></br><input type="email" name="tMail" id="cMail" size="70"
+                    placeholder="Seu e-mail" /></p>
+            <p><label for="cCel">Celular:</br><input type="text" name="tCel" id="cCel" size="70"
+                        placeholder="Telefone com DDD"></label></p>
+            <p><label for="cCpf">CPF ou CNPJ:</br><input type="text" name="tCpf" id="cCpf" size="70"
+                        placeholder="CPF ou CNPJ"></label></p>
+            <p><label for="cEnd">Endereço:</br><input type="text" name="tEnd" id="cEnd" size="70"
+                        placeholder="Endereço completo com CEP"></label></p>
+        </fieldset>
+        <fieldset id="plano">
+            <legend>Escolha seu plano:</legend>
+            <p><label for="cPla">Qual plano você deseja aderir?</label></label>
+                <select name="tPla" id="cPla">
+                    <optgroup label="Planos">
+                        <option>Plano Bronze</option>
+                        <option>Plano Prata</option>
+                        <option selected>Plano Ouro</option>
+                    </optgroup>
+                </select></p>
+            <p><label for="cAco">Você está de acordo com a contratação de 12 meses?</label>
+                <select name="tAco" id="cAco">
+                    <optgroup label="Acordo">
+                        <option selected>Sim</option>
+                    </optgroup>
+                </select></p>
+        </fieldset>
+        <input type="image" name="botao" src="_imagens/botao-enviar.png">
+    </form>
+</body>
+</html>
